@@ -1,7 +1,8 @@
-import React from 'react'
-import './Item.css'
-import '../ItemList/ItemList'
-import Counter from'../Counter/Counter'
+import React from 'react';
+import './Item.css';
+import '../ItemList/ItemList';
+import Counter from'../Counter/Counter';
+import Items from '../Item/Items'; 
 
 const Items = ({name, price, img, stock}) => {
     return(

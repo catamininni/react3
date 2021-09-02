@@ -3,6 +3,8 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import ItemList from '../ItemList/ItemList'
 import './ItemDetailContainer.css';
 import {useParams} from 'react-router-dom';
+import {Link} from 'react-router-dom'; 
+
 
 const ItemDetailContainer = () => { 
     const [localProduct, setLocalProduct] = useState([]);
@@ -49,7 +51,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div className='row'>
-                     {localItems.map ((element) =>{
+                     {localProduct.map ((element) =>{
               return (<Link to={`/products/${element.id}`}>
                   <div className="col-4 row__itemlist">
                   <Item id={element.id}  
